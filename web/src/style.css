@@ -15,11 +15,20 @@ body {
     text-align: center;
 }
 
+#title {
+    font-family: 'Sofia Sans';
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 40px;
+    margin : auto;
+}
+
 #blurb, #penguimg {
     display: inline-block;
     border: 1px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
+    margin: auto;
 }
 
 #blurb > p {
