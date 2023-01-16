@@ -3,13 +3,19 @@
 }
 
 body {
-    background: #3C79F5;
+    background: #253542;
     background-attachment: fixed;
+}
+
+.card-container {
+    margin: 10px;
+    border-radius: 7.5px;
+    background: #2B4753;
+    box-shadow: 3px 5px 5px black;
 }
 
 .container {
     display : flex;
-    border: 1px solid black;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
@@ -17,27 +23,36 @@ body {
 
 #title {
     font-family: 'Sofia Sans';
-    color: white;
+    color: #D9B45D;
     text-shadow: 3px 3px black;
     font-size: 40px;
     margin : auto;
+    animation: fadeInAnimation ease 1.5s;
 }
 
-#blurb, #penguimg {
+#blurb, #penguimg, #title {
     display: inline-block;
-    border: 1px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
     margin: auto;
 }
 
-#blurb > p {
+#penguimg {
+    animation:pop-in 5.75s;
+    -webkit-animation:pop-in 5.75s;
+    -moz-animation:pop-in 5.75s;
+    -ms-animation:pop-in 5.75s;
+}
+
+#blurb {
     color: white;
     font-family : 'Poppins';
+    animation: fadeInAnimation ease 4.5s;
 }
 
 .nav {
-    background-color : #6C00FF;
+    background-color : #D9B45D;
+    box-shadow: 2px 2px 5px black;
 }
 
 .nav > ul {
@@ -58,12 +73,12 @@ body {
 }
 
 .nav ul li a,a:link, a:hover, a:visited, a:active {
-    padding: 25px 15px;
+    padding: 25px 25px;
     color:inherit;
     text-decoration: none;
 }
 
 .nav ul li a:hover {
-    background-color: #111;
+    background-color: #D0894B;
 }
   
